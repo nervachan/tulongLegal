@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout8"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/appbg">
+
+	<Button
+		android:id="@+id/button13"
+		android:layout_width="69dp"
+		android:layout_height="40dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="28dp"
+		android:onClick="clientLogin"
+		android:text="back"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textView16"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Legal Document Library"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+	<SearchView
+		android:id="@+id/searchView"
+		android:layout_width="297dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="485dp"
+		android:layout_marginTop="20dp"
+		android:visibility="visible"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/textView20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Contracts"
+				android:textAlignment="center"
+				android:textSize="20sp" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/employment"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Employment Contract" />
+
+				<TextView
+					android:id="@+id/textView18"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+				<TextView
+					android:id="@+id/textView19"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="View Details"
+					android:textAlignment="viewEnd" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/lease"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lease Agreement" />
+
+				<TextView
+					android:id="@+id/desc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+				<TextView
+					android:id="@+id/textView26"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="View Details"
+					android:textAlignment="viewEnd" />
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/textView22"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Legal Notices"
+				android:textAlignment="center"
+				android:textSize="20sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Notice of Termination" />
+
+				<TextView
+					android:id="@+id/textView18"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+				<TextView
+					android:id="@+id/textView21"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="View Details"
+					android:textAlignment="viewEnd" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textView17"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Cease and Desist Letter" />
+
+				<TextView
+					android:id="@+id/textView18"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+				<TextView
+					android:id="@+id/textView21"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="View Details"
+					android:textAlignment="viewEnd" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/bottomToolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.997">
+
+		<ImageView
+			android:id="@+id/notif_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/notif_button" />
+
+		<ImageView
+			android:id="@+id/home_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/home_button" />
+
+		<ImageView
+			android:id="@+id/profile_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/profile_button" />
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

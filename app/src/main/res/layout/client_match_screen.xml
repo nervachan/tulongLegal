@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout6"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/appbg">
+
+	<TextView
+		android:id="@+id/textView10"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="64dp"
+		android:text="Lawyer Matching"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<LinearLayout
+		android:id="@+id/categ_selection"
+		android:layout_width="263dp"
+		android:layout_height="62dp"
+		android:layout_marginTop="76dp"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+		<TextView
+			android:id="@+id/textView13"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Legal Category"
+			android:textSize="20sp" />
+
+		<Spinner
+			android:id="@+id/spinner"
+			android:layout_width="match_parent"
+			android:layout_height="20dp"
+			android:layout_marginTop="15dp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/add_match_form"
+		android:layout_width="match_parent"
+		android:layout_height="328dp"
+		android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/categ_selection">
+
+		<TextView
+			android:id="@+id/textView14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Additional Details" />
+
+		<EditText
+			android:id="@+id/editTextText5"
+			android:layout_width="match_parent"
+			android:layout_height="190dp"
+			android:ems="10"
+			android:inputType="text"
+			android:text="Describe details"
+			android:textAlignment="textEnd"
+			android:textSize="12sp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/textView15"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Prefered Gender" />
+
+		<CheckBox
+			android:id="@+id/checkBox2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Male" />
+
+		<CheckBox
+			android:id="@+id/checkBox3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Female" />
+
+		<CheckBox
+			android:id="@+id/checkBox4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Any" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/bottomToolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.997">
+
+		<ImageView
+			android:id="@+id/notif_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/notif_button" />
+
+		<ImageView
+			android:id="@+id/home_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/home_button" />
+
+		<ImageView
+			android:id="@+id/profile_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/profile_button" />
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/button5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="32dp"
+		android:text="Find My Lawyer"
+		app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/button9"
+		android:layout_width="67dp"
+		android:layout_height="36dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		android:onClick="clientLogin"
+		android:text="Back"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

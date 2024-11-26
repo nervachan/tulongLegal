@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout5"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".ClientDashboard">
 
 	<LinearLayout
 		android:id="@+id/linearLayout7"
@@ -63,7 +64,7 @@
 				android:layout_weight="5"
 				android:background="@drawable/background_selection"
 				android:clickable="true"
-				android:onClick="lookForLawyer"
+				android:onClick="laywerMatch"
 				android:visibility="visible">
 
 				<ImageView
@@ -198,6 +199,6 @@
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:srcCompat="@drawable/menu_button"/>
+		app:srcCompat="@drawable/menu_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

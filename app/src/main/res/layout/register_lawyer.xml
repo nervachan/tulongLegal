@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout3"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".RegisterLawyer">
 
 	<LinearLayout
 		android:id="@+id/linearLayout4"
@@ -89,6 +90,7 @@
 			android:layout_marginStart="60dp"
 			android:layout_marginTop="20dp"
 			android:layout_marginEnd="60dp"
+			android:onClick="lawyerLogin"
 			android:text="Continue" />
 
 	</LinearLayout>

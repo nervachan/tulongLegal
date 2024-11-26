@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout10"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".LawyerAddNewEvent">
 
 	<TextView
 		android:id="@+id/textView24"

@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package com.nervagodz.tulonglegal
 
 import android.content.Intent
@@ -7,29 +5,25 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 
-class MainActivity : ComponentActivity() {
+class ClientLegalDocu:ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.client_login_page)
+        setContentView(R.layout.client_legal_docu_lib)
     }
 
-    fun loginClient(view: View){
+    fun clientHome(view: View){
         val intent = Intent(this, ClientDashboard::class.java)
         startActivity(intent)
     }
 
-    fun changeLoginToLawyer(view: View){
-        val intent = Intent(this, LawyerLoginPage::class.java)
+    fun clientProfile(view: View){
+        val intent = Intent(this, ClientProfile::class.java)
         startActivity(intent)
-
     }
 
-    fun registerAccount(view: View){
-        val intent = Intent(this, ClientRegister::class.java)
+    fun clientNotif(view: View) {
+        val intent = Intent(this, ClientNotif::class.java)
         startActivity(intent)
-
     }
+
 }
-
-
-

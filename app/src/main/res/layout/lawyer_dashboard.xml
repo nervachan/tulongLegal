@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout9"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".LawyerDashboard">
 
 	<CalendarView
 		android:id="@+id/calendarView"
@@ -143,8 +144,8 @@
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:clickable="true"
-			app:srcCompat="@drawable/notif_button"
-			android:onClick="checkNotifsLawyer"/>
+			android:onClick="checkLaywerNotif"
+			app:srcCompat="@drawable/notif_button" />
 
 		<ImageView
 			android:id="@+id/home_button"
@@ -160,6 +161,7 @@
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:clickable="true"
+			android:onClick="checkLawyerProfile"
 			app:srcCompat="@drawable/profile_button" />
 
 	</LinearLayout>
@@ -168,11 +170,11 @@
 		android:id="@+id/imageView3"
 		android:layout_width="52dp"
 		android:layout_height="52dp"
+		android:onClick="addNewEvent"
 		app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:srcCompat="@drawable/add_appointment_button"
-		android:onClick="addLawyerevent"/>
+		app:srcCompat="@drawable/add_appointment_button" />
 
 	<ImageView
 		android:id="@+id/imageView5"

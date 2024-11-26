@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout11"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/appbg"
+	tools:context=".LawyerNotif">
+
+	<LinearLayout
+		android:id="@+id/bottomToolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.997">
+
+		<ImageView
+			android:id="@+id/notif_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			app:srcCompat="@drawable/notif_button" />
+
+		<ImageView
+			android:id="@+id/home_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:onClick="LawyerDashboard"
+			app:srcCompat="@drawable/home_button" />
+
+		<ImageView
+			android:id="@+id/profile_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:onClick="LawyerProfile"
+			app:srcCompat="@drawable/profile_button" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout16"
+		android:layout_width="0dp"
+		android:layout_height="30dp"
+		android:layout_marginStart="30dp"
+		android:layout_marginTop="130dp"
+		android:layout_marginEnd="30dp"
+		android:orientation="horizontal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<TextView
+			android:id="@+id/textView23"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:onClick="checkAllNotifs"
+			android:text="All" />
+
+		<TextView
+			android:id="@+id/textView25"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:onClick="checkUnreadNotifs"
+			android:text="Unread" />
+
+		<TextView
+			android:id="@+id/textView30"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:clickable="true"
+			android:onClick="checkReadNotifs"
+			android:text="Read" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/textView31"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Notifications"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout_editor_absoluteY="85dp" />
+
+	<ScrollView
+		android:layout_width="409dp"
+		android:layout_height="518dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginEnd="1dp"
+		app:layout_constraintBottom_toTopOf="@+id/bottomToolbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/textView32"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Name" />
+
+						<TextView
+							android:id="@+id/textView33"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Lorem ipsum sit dolor" />
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/textView32"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Name" />
+
+					<TextView
+						android:id="@+id/textView33"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Lorem ipsum sit dolor" />
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/textView32"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Name" />
+
+				<TextView
+					android:id="@+id/textView33"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum sit dolor" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textView32"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Name" />
+
+				<TextView
+					android:id="@+id/textView33"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum sit dolor" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/textView32"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Name" />
+
+				<TextView
+					android:id="@+id/textView33"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lorem ipsum sit dolor" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<ImageView
+		android:id="@+id/imageView7"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/menu_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

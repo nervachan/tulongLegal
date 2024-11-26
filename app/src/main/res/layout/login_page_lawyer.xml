@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".LawyerLoginPage">
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -60,8 +61,8 @@
 			android:id="@+id/button"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Login"
-			android:onClick="lawyerLogin"/>
+			android:onClick="lawyerLogin"
+			android:text="Login" />
 
 		<TextView
 			android:id="@+id/textView3"
@@ -69,9 +70,9 @@
 			android:layout_height="wrap_content"
 			android:layout_marginTop="30dp"
 			android:clickable="true"
+			android:onClick="changeLoginToClient"
 			android:text="Login for Clients"
-			android:textSize="20sp"
-			android:onClick="clientLogin"/>
+			android:textSize="20sp" />
 
 		<TextView
 			android:id="@+id/textView4"
@@ -79,8 +80,8 @@
 			android:layout_height="wrap_content"
 			android:layout_marginTop="10dp"
 			android:clickable="true"
+			android:onClick="lawyerRegister"
 			android:text="Don't have an account? Click here"
-			android:textSize="20sp"
-			android:onClick="register"/>
+			android:textSize="20sp" />
 	</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

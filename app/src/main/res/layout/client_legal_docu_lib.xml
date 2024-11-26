@@ -5,7 +5,8 @@
 	android:id="@+id/linearLayout8"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/appbg">
+	android:background="@drawable/appbg"
+	tools:context=".ClientLegalDocu">
 
 	<Button
 		android:id="@+id/button13"
@@ -13,7 +14,7 @@
 		android:layout_height="40dp"
 		android:layout_marginStart="16dp"
 		android:layout_marginTop="28dp"
-		android:onClick="clientLogin"
+		android:onClick="clientHome"
 		android:text="back"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
@@ -192,6 +193,7 @@
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:clickable="true"
+			android:onClick="clientNotif"
 			app:srcCompat="@drawable/notif_button" />
 
 		<ImageView
@@ -200,6 +202,7 @@
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:clickable="true"
+			android:onClick="clientHome"
 			app:srcCompat="@drawable/home_button" />
 
 		<ImageView
@@ -208,6 +211,7 @@
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:clickable="true"
+			android:onClick="clientProfile"
 			app:srcCompat="@drawable/profile_button" />
 
 	</LinearLayout>
